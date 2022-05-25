@@ -1,0 +1,25 @@
+.container{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding-top: 50px;
+}
+
+.live {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #69ffb9;
+    animation: pulse 1500ms infinite;
+    margin: 0 auto;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: #69ffb9 0 0 0 0;
+    }
+    75% {
+        box-shadow: #69ffb900 0 0 0 32px;
+    }
+}
