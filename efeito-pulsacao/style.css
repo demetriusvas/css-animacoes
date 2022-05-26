@@ -1,11 +1,38 @@
-.container{
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    background-color: aliceblue;
-    padding-top: 50px;
+body {
+    background-color: rgb(66, 66, 66);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container{
+    width: 1200px;
+    height: 700px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.text-focus-in {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+    
 .live {
     height: 48px;
     width: 48px;
